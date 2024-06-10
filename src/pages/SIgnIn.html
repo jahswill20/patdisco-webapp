@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Parking Fines - Sign In</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body class="bg-white flex min-h-screen">
+    <div class="hidden md:flex md:flex-col md:ml-7 md:mt-7 md:mb-6">
+        <img src="../icons-images/Front-view-woman.png" alt="" class="w-[683px] h-[821px] shadow-lg rounded-md">
+    </div>
+    <div class="w-full max-w-md p-8 space-y-8 bg-white mt-16 md:flex md:flex-col md:mx-auto">
+        <div class="flex justify-center">
+            <img src="../icons-images/mpf logo orange (1) 2.png" alt="My Parking Fines Logo" class="h-[74px] w-[74px]">
+        </div>
+        <div class="flex justify-center mt-4 space-x-4 w-[260px] h-[32px] mx-auto">
+            <div class="w-[130px]  text-center">
+                <a href="../index.html">Login</a>
+            </div>
+            <div class="text-center bg-[#ffead9] w-[130px]">
+                <a href="../src/pages/SIgnIn.html">SIgnUp</a>
+            </div>
+        </div>
+        <div class="mt-8 space-y-4 w-[335px] mx-auto">
+            <button id="EmailBtn" class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-gray-700 bg-gray-100">
+                <img src="../icons-images/envelope-solid.png" alt="">
+                Sign up Email
+            </button>
+
+            <div id="EmailForm" class="hidden">
+
+                <div class="gap-2 flex">
+                     <div class="">
+                         <label for="" class="font-bold text-[11px]">First Name</label>
+                         <input type="text" class="w-[161.92px] h-[32px border rounded-md]">
+                     </div>
+                     <div class="">
+                         <label for="" class="font-bold text-[11px]">Last Name</label>
+                         <input type="text" class="w-[161.92px] h-[32px border rounded-md]">
+                     </div>
+                </div> 
+                     <div>
+                         <label for="" class="text-[11px] font-bold">Phone Number</label>
+                         <input type="number" placeholder="+44-XXXX-XXXXXX" class="border rounded-l-lg w-[335px] h-[32px] p-2">
+                         <div class="w-[335px]" id="">
+                             <div class="flex flex-col">
+                                 <label for="Email" class="text-[11px] font-bold">Email</label>
+                                 <input type="text" id="Email" class="border rounded-md w-[335px] h-[32px] mt-2">
+                             </div>
+                             <div>
+                                 <label for="" class="text-[11px] font-bold">Date of birth</label>
+                                 <img src="../icons-images/calendar-mini.png" alt="" class="relative top-7 left-[2px]">
+                                 <input type="text" placeholder="DD/MM/YYYY" class="border rounded-l-lg w-[335px] h-[32px] pt-2 px-6">
+                                </div>
+                             <div class="flex flex-col pt-2">
+                                 <div class="text-[11px] font-bold flex justify-between">
+                                     <label for="password">Password</label>
+                                     <a href="#">Forgot Password</a>
+                                 </div>
+                               <div class="flex mt-2">
+                                 <input type="password" id="password" class="border rounded-l-lg w-[302px] h-[32px]">
+                                 <div class="w-[32px] border flex justify-center items-center rounded-r-lg"><img src="../icons-images/eye-mini.png" alt="" class="" id="eyeIcon"></div>
+                               </div>
+                             </div>
+                             <button class="w-[336px] mt-3 py-3 bg-orange-500 border rounded-lg">Sign up</button>
+                             <div class="mx-auto flex justify-center items-center gap-4 mt-4">
+                                 <div class="w-[80.5px] h-[1px] bg-gray-700"></div>
+                                 <p>Or you can</p>
+                                 <div class="w-[80.5px] h-[1px] bg-gray-700"></div>
+                             </div>
+                         </div>
+                     </div>
+            </div>
+            <button class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-gray-700 bg-gray-100 ">
+               <img src="../icons-images/Google1.png" alt="">
+                Sign up With Google
+            </button>
+            <button class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-gray-700 bg-gray-100 ">
+                <img src="../icons-images/apple1.png" alt="">
+                Sign up With Apple
+            </button>
+        </div>
+    </div>
+    <script src="../scripts/CreateAccount.js"></script>
+</body>
+</html>

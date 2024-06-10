@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body class="bg-gray-100 md:flex md:px-0">
+
+    <!-- Nav Section -->
+    <nav id="nav" class="fixed inset-0 bg-white transform -translate-x-60 transition-transform duration-300 z-50 w-[245px]">
+        <div class="">
+            <div class="flex items-end justify-end mb-6 px-6 pt-6">
+                <img src="../icons-images/x-mark.png" alt="x" id="close">
+            </div>
+            <div class=" flex justify-between items-center mb-10 px-6">
+                <img src="../icons-images/mpf logo orange (1) 2.png" alt="">
+                <div>
+                    <img id="icon-logout" src="../icons-images/Group 166.png" alt="">
+                    <div  id="logoutbtn" class="rounded  hidden shadow-lg border border-gray-300 text-center bg-white px-2 py-2">
+                        log out
+                    </div>
+                </div>
+            </div>
+            <ul class="space-y-6">
+                <li class="flex items-center space-x-2 py-2 px-8 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                    <img src="../icons-images/home-line.png" alt="">
+                    <a href="#" class="text-lg font-semibold">Dashboard</a>
+                </li>
+                <li class="flex items-center space-x-2 py-2 px-8 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                    <img src="../icons-images/tag-01.png" alt="tickets" class="w-6 h-6 mr-2">
+                    <a href="#" class="text-lg font-semibold">Tickets</a>
+                </li>
+                <li class="flex items-center space-x-2 py-2 px-8 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                    <img src="../icons-images/settings-02.png" alt="settings" class="w-6 h-6 mr-2">
+                    <a href="#" class="text-lg font-semibold">Settings</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class=" relative -bottom-10 flex items-center justify-center mt-36">
+            <img src="../icons-images/Group 875314.png" alt="">
+        </div>
+        
+    </nav>
+    <aside class=" hidden w-60 relative left-0 bg-white shadow-md md:flex md:flex-col justify-between min-h-screen">
+        <div class=" pt-6">
+          <img src="../icons-images/mpf logo orange (1) 2.png" alt="logo" class="w-16 h-16 ml-6 mb-8">
+          <nav class="space-y-4  relative top-16">
+            <ul>
+              <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                <img src="../icons-images/home-line.png" alt="Dashboard" class="w-6 h-6">
+                <a href="./pages/dashboard1.html">Dashboard</a>
+              </li> 
+              <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                <img src="../icons-images/tag-01.png" alt="Tickets" class="w-6 h-6">
+                <a href="#">Tickets</a>
+              </li>
+              <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                <img src="../icons-images/settings-02.png" alt="Settings" class="w-6 h-6">
+                <a href="#">Settings</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="p-4">
+          <img src="../icons-images/Group 875314.png" alt="Refer a friend" class="mx-auto relative bottom-10">
+        </div>
+        
+      </aside>
+
+    <div class="flex flex-col min-h-screen w-full">
+        <!-- Header -->
+        <header class="flex justify-between px-5 pt-5 md:hidden">
+            <img src="../icons-images/menu-01.png" alt="menu" class="w-8 h-8 cursor-pointer" id="menu">
+            <h2 class="text-lg font-semibold">Dashboard</h2>
+            <img src="../icons-images/bell-alert-solid.png" alt="notifications" class="w-6 h-6">
+        </header>
+<!-- desktop header -->
+<header class=" hidden md:flex justify-between items-center mb-6 mt-5">
+    <div class="flex items-center gap-2 ml-5">
+      <label for="SearchInput"><img src="../icons-images/magnifying-glass.png" alt="Search" class="w-5 h-5"></label>
+      <input type="text" id="SearchInput" placeholder="Search For Tickets, PCN and so on" class="w-60 bg-inherit focus:outline-none text-gray-700">
+    </div>
+    <div class="flex items-center gap-24">
+      <button class="flex items-center gap-2 py-2 px-2 bg-orange-400  border border-black rounded-md hover:bg-orange-500">
+        <img src="../icons-images/document-text.png" alt="Create Ticket" class="w-5 h-5">
+        <a href="./CreateTicket.html">Create A New Ticket</a>
+      </button>
+      <div class="flex items-center gap-4 mr-6">
+        <div>
+            <img src="../icons-images/bell-alert-solid.png" alt="Notification" class="w-6 h-6 -mt-2 text-gray-700" id="notificationsicon">
+          
+          
+            <div id="notifications" class=" hidden absolute w-[483px] h-[400px] bg-white shadow-lg right-[70px] top-[75px] space-y-2 rounded overflow-y-scroll">
+                <div class="flex justify-between border-b border-gray-400 px-3 py-3">
+                    <h2 class="font-bold">Notification</h2>
+                    <img src="../icons-images/x-mark-mini.png" alt="" class="" id="hideNotifications">
+                </div>
+                <div>
+                    <!--notification content -->
+                    <div class="flex justify-between py-2 px-3">
+                        <div class="flex gap-2">
+                            <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                            <div>
+                                <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                                <p class="text-[13px]">your ticket has been paid</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-[13px]">> 1m ago</h2>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-3">
+                        <div class="flex gap-2">
+                            <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                            <div>
+                                <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                                <p class="text-[13px]">your ticket has been paid</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-[13px]">> 1m ago</h2>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-3">
+                        <div class="flex gap-2">
+                            <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                            <div>
+                                <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                                <p class="text-[13px]">your ticket has been paid</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-[13px]">> 1m ago</h2>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col py-2 px-3">
+                        <div  class="flex justify-between"> <div class="flex gap-2">
+                            <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                            <div>
+                                <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-[13px]">> 1m ago</h2>
+                        </div></div>
+
+                        <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+                    </div>
+                    <div class="flex flex-col py-2 px-3">
+                        <div  class="flex justify-between"> <div class="flex gap-2">
+                            <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                            <div>
+                                <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-[13px]">> 1m ago</h2>
+                        </div></div>
+
+                        <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+                    </div>
+                    <div class="flex flex-col py-2 px-3">
+                        <div  class="flex justify-between"> <div class="flex gap-2">
+                            <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                            <div>
+                                <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-[13px]">> 1m ago</h2>
+                        </div></div>
+
+                        <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        
+
+        <img src="../icons-images/Group 166.png" alt="User" class="w-10 h-10 rounded-full " id="Profile">
+        <div id="Logout" class="w-36 h-10 absolute bg-white
+         shadow-lg border border-gray-300
+          rounded-md top-[68px] right-[4px] py-2 px-3 hidden">
+          <h2>log out</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+        <!-- Main Content -->
+        <div class="p-6">
+
+            <!-- Greeting -->
+            <div class="mb-8">
+                <h1 class="text-xl font-semibold">Hello Tammy👋</h1>
+                <p class="text-gray-600">Good to have you here today!</p>
+            </div>
+            <div class="md:flex gap-3">
+
+                <div>
+                    
+                                <!-- Statistics -->
+                                <div class="flex gap-3 mb-6">
+                                   
+                                    <div class="bg-gradient-to-b from-white to-gray-100 p-4 rounded-[8px] shadow h-[110px] min-w-[200px] md:w-[284px] border-2 flex-shrink-0">
+                                        <h2 class="text-2xl font-semibold">£800</h2>
+                                        <p class="text-gray-600 text-sm mt-2">Amount Of Ticket Paid</p>
+                                    </div>
+                                    <div class="bg-gradient-to-b from-white to-gray-100 p-4 rounded-[8px] shadow h-[110px] min-w-[200px] md:w-[284px] border-2 flex-shrink-0">
+                                        <h2 class="text-2xl font-semibold">20</h2>
+                                        <p class="text-gray-600 text-sm mt-2">Total number of tickets</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Tickets Section -->
+                                <div class="bg-gradient-to-b from-white to-gray-100 p-4 rounded-[8px] shadow border mb-6 md:w-[579px] md:h-[405px] ">
+                                    <div class="flex justify-between items-center mb-4">
+                                        <h2 class="text-lg font-semibold">Tickets</h2>
+                                        <a href="Paidtickets.html" class="text-[#ff9540] text-sm hover:underline">See All</a>
+                                    </div>
+                                    <div class="space-y-4 md:hidden">
+                                        <div class="flex justify-between items-center py-2 border-b">
+                                            <div>
+                                                <h3 class="text-sm font-semibold">KH14012150</h3>
+                                                <p class="text-xs text-gray-500">12 Mar, 2024 12:34pm</p>
+                                            </div>
+                                            <div class="flex items-center space-x-2">
+                                                <label class="py-4 border-b"><img src="../icons-images/Rectangle green.png" alt="" class="inline  mr-2">paid</label>
+                                                <img src="../icons-images/ellipsis-horizontal.png" alt="more" class="w-5 h-5">
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between items-center py-2 border-b">
+                                            <div>
+                                                <h3 class="text-sm font-semibold">KH14012150</h3>
+                                                <p class="text-xs text-gray-500">12 Mar, 2024 12:34pm</p>
+                                            </div>
+                                            <div class="flex items-center space-x-2">
+                                                <label class="py-4 border-b"><img src="../icons-images/Rectangle green.png" alt="" class="inline  mr-2">paid</label>
+                                                <img src="../icons-images/ellipsis-horizontal.png" alt="more" class="w-5 h-5">
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between items-center py-2 border-b">
+                                            <div>
+                                                <h3 class="text-sm font-semibold">KH14012150</h3>
+                                                <p class="text-xs text-gray-500">12 Mar, 2024 12:34pm</p>
+                                            </div>
+                                            <div class="flex items-center space-x-2">
+                                                <label class="py-4 border-b"><img src="../icons-images/Rectangle red.png" alt="" class="inline  mr-2">Not paid yet</label>
+                                                <img src="../icons-images/ellipsis-horizontal.png" alt="more" class="w-5 h-5">
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between items-center py-2 border-b">
+                                            <div>
+                                                <h3 class="text-sm font-semibold">KH14012150</h3>
+                                                <p class="text-xs text-gray-500">12 Mar, 2024 12:34pm</p>
+                                            </div>
+                                            <div class="flex items-center space-x-2">
+                                                <label class="py-4 border-b"><img src="../icons-images/Rectangle red.png" alt="" class="inline  mr-2">Not paid yet</label>
+                                                <img src="../icons-images/ellipsis-horizontal.png" alt="more" class="w-5 h-5">
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between items-center py-2">
+                                            <div>
+                                                <h3 class="text-sm font-semibold">KH14012150</h3>
+                                                <p class="text-xs text-gray-500">12 Mar, 2024 12:34pm</p>
+                                            </div>
+        
+                                            <div class="flex items-center space-x-2">
+                                                <label class="py-4 border-b"><img src="../icons-images/Rectangle red.png" alt="" class="inline  mr-2">Not paid yet</label>
+                                                <img src="../icons-images/ellipsis-horizontal.png" alt="more" class="w-5 h-5">
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <table class="w-full hidden md:table" id="desktop-table">
+                                        <thead class="relative -left-3">
+                                            <tr>
+                                                <th class="py-2 border-b">PCN Number</th>
+                                                <th class="py-2 border-b">Validation Date</th>
+                                                <th class="py-2 border-b">Status</th>
+                                                <th class="py-2 border-b">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="relative left-2">
+                                            <tr class="mt-4">
+                                                <td class="py-4 border-b">KH14012150</td>
+                                                <td class="py-4 border-b">12 Mar, 2024  12:34pm</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/Rectangle green.png" alt="" class="inline  mr-2">paid</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/ellipsis-horizontal (1).png" alt="" class="inline w-4 h-4"></td>
+                                            </tr>
+                                            <tr class="mt-4">
+                                                <td class="py-4 border-b">KH14012150</td>
+                                                <td class="py-4 border-b">12 Mar, 2024  12:34pm</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/Rectangle green.png" alt="" class="inline mr-2">paid</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/ellipsis-horizontal (1).png" alt="" class="inline w-4 h-4"></td>
+                                            </tr>
+                                            <tr class="mt-4">
+                                                <td class="py-4 border-b">KH14012150</td>
+                                                <td class="py-4 border-b">12 Mar, 2024  12:34pm</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/Rectangle red.png" alt="" class="inline  mr-2">Not paid</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/ellipsis-horizontal (1).png" alt="" class="inline w-4 h-4"></td>
+                                            </tr>
+                                            <tr class="mt-4">
+                                                <td class="py-4 border-b">KH14012150</td>
+                                                <td class="py-4 border-b">12 Mar, 2024  12:34pm</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/Rectangle red.png" alt="" class="inline mr-2">Not paid</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/ellipsis-horizontal (1).png" alt="" class="inline w-4 h-4"></td>
+                                            </tr>
+                                            <tr class="mt-4">
+                                                <td class="py-4 border-b">KH14012150</td>
+                                                <td class="py-4 border-b">12 Mar, 2024  12:34pm</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/Rectangle red.png" alt="" class="inline  mr-2">Not paid</td>
+                                                <td class="py-4 border-b"><img src="../icons-images/ellipsis-horizontal (1).png" alt="" class="inline w-4 h-4"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                                                          
+                                </div>
+    
+                </div>
+                <div>
+    
+    
+                    <!-- Announcements Section -->
+                    <div class="bg-gradient-to-b from-white to-gray-100 rounded-[8px] shadow border mb-6 h-60 md:w-[435px] md:h-[349px]">
+                        <div class="flex items-center bg-[#FFEAD9] pl-3 rounded-t">
+                            <div class="space-y-1">
+                                <h2 class="text-sm font-semibold">Announcements</h2>
+                                <p class="text-xs text-gray-600">Watch this space for announcements and updates from us</p>
+                            </div>
+                            <img src="../icons-images/hiring--work-hiring.png" alt="announcement" class="ml-auto">
+                        </div>
+                        <div class="space-y-4 mt-4 px-3">
+                            <div class="space-y-1">
+                                <h3 class="text-sm font-semibold ">Council Update <span class="ml-60">>1m ago</span></h3>
+                                <p class="text-xs text-gray-600">We have finally added Hullicity council to our list of councils</p>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-sm font-semibold">Council Update <span class="ml-60">>1m ago</span></h3>
+                                <p class="text-xs text-gray-600">We have finally added Hullicity council to our list of councils</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Notices & Disclaimers Section -->
+                    <div class="bg-gradient-to-b from-white to-gray-100 pt-2 px-3 rounded-[8px] shadow border mb-6 md:w-[435px] md:h-[174px]">
+                        <h2 class="text-lg font-semibold mb-2">Notices & Disclaimers</h2>
+                        <ul class="list-disc list-inside text-sm text-gray-600 md:text-[10px]">
+                            <li>MPF Is Not A Credit Provider But An FCA Regulated Credit Broker</li>
+                            <li>Payments & Late Payments Should Be Managed Through The Associated Pay8r Or Stripe Accounts</li>
+                            <li>Tickets With Less Than 24 Hrs Between Bands Will Be Processed On The Next Band</li>
+                            <li>Late Payments Can Adversely Affect Your Ability To Receive Credit</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>    
+
+            <!-- Footer Action Button -->
+            <div class="bottom-0 left-0 right-0 p-2 shadow-md md:hidden">
+                <button class="w-full bg-orange-400 text-white py-3 rounded-md hover:bg-orange-500">Create New Ticket</button>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/Main.js"></script>
+</body>
+</html>

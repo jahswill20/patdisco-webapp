@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body class="bg-gray-100 md:flex">
+    <aside class=" hidden w-60 bg-white shadow-md md:flex md:flex-col justify-between min-h-screen">
+        <div class=" pt-6">
+          <img src="../icons-images/mpf logo orange (1) 2.png" alt="logo" class="w-16 h-16 ml-6 mb-8">
+          <nav class="space-y-4  relative top-16">
+            <ul>
+              <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                <img src="../icons-images/home-line.png" alt="Dashboard" class="w-6 h-6">
+                <a href="./pages/dashboard1.html">Dashboard</a>
+              </li> 
+              <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                <img src="../icons-images/tag-01.png" alt="Tickets" class="w-6 h-6">
+                <a href="#">Tickets</a>
+              </li>
+              <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                <img src="../icons-images/settings-02.png" alt="Settings" class="w-6 h-6">
+                <a href="#">Settings</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="p-4">
+          <img src="../icons-images/Group 875314.png" alt="Refer a friend" class="mx-auto relative bottom-10">
+        </div>
+        
+      </aside>
+    <div class="container mx-auto">
+        <header class=" hidden md:flex justify-between items-center mb-6 mt-5">
+            <div class="flex items-center gap-2 ml-5">
+              <label for="SearchInput"><img src="../icons-images/magnifying-glass.png" alt="Search" class="w-5 h-5"></label>
+              <input type="text" id="SearchInput" placeholder="Search For Tickets, PCN and so on" class="w-60 bg-inherit focus:outline-none text-gray-700">
+            </div>
+            <div class="flex items-center gap-24">
+              <button class="flex items-center gap-2 py-2 px-2 bg-orange-400  border border-black rounded-md hover:bg-orange-500">
+                <img src="../icons-images/document-text.png" alt="Create Ticket" class="w-5 h-5">
+                <a href="./CreateTicket.html">Create A New Ticket</a>
+              </button>
+              <div class="flex items-center gap-4 mr-6">
+                <div>
+                    <img src="../icons-images/bell-alert-solid.png" alt="Notification" class="w-6 h-6 text-gray-700" id="notificationsicon">
+                  
+                  
+                    <div id="notifications" class=" hidden absolute w-[483px] h-[400px] bg-white shadow-lg right-[70px] top-[75px] space-y-2 rounded overflow-y-scroll">
+                        <div class="flex justify-between border-b border-gray-400 px-3 py-3 text-gray-200">
+                            <h2 class="font-bold">Notification</h2>
+                            <img src="../icons-images/x-mark-mini.png" alt="" class="" id="hideNotifications">
+                        </div>
+                        <div>
+                            <!--notification content -->
+                            <div class="flex justify-between py-2 px-3">
+                                <div class="flex gap-2">
+                                    <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                                    <div>
+                                        <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                                        <p class="text-[13px]">your ticket has been paid</p>
+                                    </div>
+                                </div>
+        
+                                <div>
+                                    <h2 class="text-[13px]">> 1m ago</h2>
+                                </div>
+                            </div>
+        
+                            <div class="flex justify-between py-2 px-3">
+                                <div class="flex gap-2">
+                                    <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                                    <div>
+                                        <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                                        <p class="text-[13px]">your ticket has been paid</p>
+                                    </div>
+                                </div>
+        
+                                <div>
+                                    <h2 class="text-[13px]">> 1m ago</h2>
+                                </div>
+                            </div>
+        
+                            <div class="flex justify-between py-2 px-3">
+                                <div class="flex gap-2">
+                                    <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                                    <div>
+                                        <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                                        <p class="text-[13px]">your ticket has been paid</p>
+                                    </div>
+                                </div>
+        
+                                <div>
+                                    <h2 class="text-[13px]">> 1m ago</h2>
+                                </div>
+                            </div>
+        
+                            <div class="flex flex-col py-2 px-3">
+                                <div  class="flex justify-between"> <div class="flex gap-2">
+                                    <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                                    <div>
+                                        <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                                    </div>
+                                </div>
+        
+                                <div>
+                                    <h2 class="text-[13px]">> 1m ago</h2>
+                                </div></div>
+        
+                                <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+                            </div>
+                            <div class="flex flex-col py-2 px-3">
+                                <div  class="flex justify-between"> <div class="flex gap-2">
+                                    <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                                    <div>
+                                        <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                                    </div>
+                                </div>
+        
+                                <div>
+                                    <h2 class="text-[13px]">> 1m ago</h2>
+                                </div></div>
+        
+                                <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+                            </div>
+                            <div class="flex flex-col py-2 px-3">
+                                <div  class="flex justify-between"> <div class="flex gap-2">
+                                    <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                                    <div>
+                                        <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                                    </div>
+                                </div>
+        
+                                <div>
+                                    <h2 class="text-[13px]">> 1m ago</h2>
+                                </div></div>
+        
+                                <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+                            </div>
+        
+        
+        
+                        </div>
+                    </div>
+                </div>
+                
+        
+                <img src="../icons-images/Group 166.png" alt="User" class="w-10 h-10 rounded-full " id="Profile">
+                <div id="Logout" class="w-36 h-10 absolute bg-white
+                 shadow-lg border border-gray-300
+                  rounded-md top-[68px] right-[4px] py-2 px-3 hidden">
+                  <h2>log out</h2>
+                </div>
+              </div>
+            </div>
+          </header>
+        
+        <!-- Navbar -->
+        <div class="flex items-center justify-between mb-4 px-4 pt-4 md:hidden">
+            <img src="../icons-images/menu-01.png" alt="Menu" class="w-6 h-6" id="menu">
+            <h1 class="text-xl font-semibold">Tickets</h1>
+            <img src="../icons-images/bell-alert-solid.png" alt="Notification" class="w-6 h-6">
+        </div>
+        <nav id="nav" class="fixed inset-0 bg-white transform -translate-x-60 transition-transform duration-300 z-50 w-[245px]">
+            <div class="">
+                <div class="flex items-end justify-end mb-6 px-6 pt-6">
+                    <img src="../icons-images/x-mark.png" alt="x" id="close">
+                </div>
+                <div class=" flex justify-between items-center mb-10 px-6">
+                    <img src="../icons-images/mpf logo orange (1) 2.png" alt="">
+                    <div>
+                        <img id="icon-logout" src="../icons-images/Group 166.png" alt="">
+                        <div  id="logoutbtn" class="rounded  hidden shadow-lg border border-gray-300 text-center bg-white px-2 py-2">
+                            log out
+                        </div>
+                    </div>
+                </div>
+                <ul class="space-y-6">
+                    <li class="flex items-center space-x-2 py-2 px-8 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                        <img src="../icons-images/home-line.png" alt="">
+                        <a href="#" class="text-lg font-semibold">Dashboard</a>
+                    </li>
+                    <li class="flex items-center space-x-2 py-2 px-8 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                        <img src="../icons-images/tag-01.png" alt="tickets" class="w-6 h-6 mr-2">
+                        <a href="#" class="text-lg font-semibold">Tickets</a>
+                    </li>
+                    <li class="flex items-center space-x-2 py-2 px-8 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                        <img src="../icons-images/settings-02.png" alt="settings" class="w-6 h-6 mr-2">
+                        <a href="#" class="text-lg font-semibold">Settings</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class=" relative -bottom-10 flex items-center justify-center mt-36">
+                <img src="../icons-images/Group 875314.png" alt="">
+            </div>
+            
+        </nav>
+
+        <div class="hidden md:flex px-[50px] mt-16">
+            <h2 class="text-2xl bold text-gray-700">Tickets</h2>
+        </div>
+
+
+        <!-- Tabs -->
+        <div class="flex mb-4 justify-center mt-20 md:justify-start md:px-[50px]">
+            <button class=" px-4 py-2 w-[130px] rounded-l">Paid</button>
+            <button class="bg-[#FFEAD9] text-gray-600 px-4 py-2 w-[130px] rounded-r">Yet To Pay</button>
+        </div>
+        <!-- Ticket Table -->
+        <div class="bg-gray-100 text-[13px] px-2 md:px-[45px] md:hidden">
+           <div class="flex justify-between px-3 py-3">
+                <div class="flex gap-2">
+                    <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+                    <div>
+                        <h2>KH14012150</h2>
+                        <p class="text-gray-500">12 Mar, 2024 12:34pm</p>
+                    </div>
+                </div>
+                    <div class="">
+                        <div class="w-[106px]">
+                            <h2 class="relative left-[72px]">£50</h2>
+                            <p class="text-gray-500">Hull City Council</p>
+                        </div>
+                        
+                    </div>
+           </div>
+           <div class="flex justify-between px-3 py-3">
+            <div class="flex gap-2">
+                <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+                <div>
+                    <h2>KH14012150</h2>
+                    <p class="text-gray-500">12 Mar, 2024 12:34pm</p>
+                </div>
+            </div>
+                <div class="flex gap-3">
+                    <div class="w-[106px]">
+                        <h2 class="relative left-[72px]">£50</h2>
+                        <p class="text-gray-500">Hull City Council</p>
+                    </div>
+                    
+                </div>
+       </div>
+     
+       <div class="flex justify-between px-3 py-3">
+        <div class="flex gap-2">
+            <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+            <div>
+                <h2>KH14012150</h2>
+                <p class="text-gray-500">12 Mar, 2024 12:34pm</p>
+            </div>
+        </div>
+            <div class="flex gap-3">
+                <div class="w-[106px]">
+                    <h2 class="relative left-[72px]">£50</h2>
+                    <p class="text-gray-500">Hull City Council</p>
+                </div>
+                
+            </div>
+   </div>
+ 
+   <div class="flex justify-between px-3 py-3">
+    <div class="flex gap-2">
+        <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+        <div>
+            <h2>KH14012150</h2>
+            <p class="text-gray-500">12 Mar, 2024 12:34pm</p>
+        </div>
+    </div>
+        <div class="flex gap-3">
+            <div class="w-[106px]">
+                <h2 class="relative left-[72px]">£50</h2>
+                <p class="text-gray-500">Hull City Council</p>
+            </div>
+            
+        </div>
+</div>
+
+<div class="flex justify-between px-3 py-3">
+    <div class="flex gap-2">
+        <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+        <div>
+            <h2>KH14012150</h2>
+            <p class="text-gray-500">12 Mar, 2024 12:34pm</p>
+        </div>
+    </div>
+        <div class="flex gap-3">
+            <div class="w-[106px]">
+                <h2 class="relative left-[72px]">£50</h2>
+                <p class="text-gray-500">Hull City Council</p>
+            </div>
+        
+        </div>
+</div>
+
+<div class="flex justify-between px-3 py-3">
+    <div class="flex gap-2">
+        <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+        <div>
+            <h2>KH14012150</h2>
+            <p class="text-gray-500">12 Mar, 2024 12:34pm</p>
+        </div>
+    </div>
+        <div class="flex gap-3">
+            <div class="w-[106px]">
+                <h2 class="relative left-[72px]">£50</h2>
+                <p class="text-gray-500">Hull City Council</p>
+            </div>
+        </div>
+</div>
+
+
+        </div>
+        
+        <div class="hidden  md:flex flex-col px-[50px]">
+            <!-- desktop table -->
+            <div class="flex justify-between items-center bg-[#2A4C45] px-10 list-none gap-10">
+                <!-- table header -->
+                <li class="py-3 text-gray-200"><h2>PCN Number</h2></li>
+                <li class="py-3 text-gray-200"><h2>Council</h2></li>
+                <li class="py-3 text-gray-200"><h2>Validation date</h2></li>
+                <li class="py-3 text-gray-200"><h2>Penalty charge</h2></li>
+                <li class="py-3 text-gray-200"><h2>Action</h2></li>
+            </div>
+            <div class="flex justify-between items-center px-10 list-none gap-6">
+        
+                <li class="py-3  flex gap-2 relative -left-[20px]">
+                    <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+                    <h2>KH14012150</h2></li>
+                <li class="py-3 relative left-[6px] "><h2>Hull City Council</h2></li>
+                <li class="py-3 relative -left-[59px]"><h2>12 Mar, 2024 12:34pm</h2></li>
+                <li class="py-3 relative -left-[65px]"><h2>£50</h2></li>
+                
+                <li class="py-3 relative -left-[14px] "><img src="../icons-images/ellipsis-horizontal.png" alt=""></li>
+            </div>
+            <div class="flex justify-between items-center px-10 list-none gap-6">
+        
+                <li class="py-3  flex gap-2 relative -left-[20px]">
+                    <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+                    <h2>KH14012150</h2></li>
+                <li class="py-3 relative left-[6px] "><h2>Hull City Council</h2></li>
+                <li class="py-3 relative -left-[59px]"><h2>12 Mar, 2024 12:34pm</h2></li>
+                <li class="py-3 relative -left-[65px]"><h2>£50</h2></li>
+                
+                <li class="py-3 relative -left-[14px] "><img src="../icons-images/ellipsis-horizontal.png" alt=""></li>
+            </div>
+            <div class="flex justify-between items-center px-10 list-none gap-6">
+        
+                <li class="py-3  flex gap-2 relative -left-[20px]">
+                    <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+                    <h2>KH14012150</h2></li>
+                <li class="py-3 relative left-[6px] "><h2>Hull City Council</h2></li>
+                <li class="py-3 relative -left-[59px]"><h2>12 Mar, 2024 12:34pm</h2></li>
+                <li class="py-3 relative -left-[65px]"><h2>£50</h2></li>
+                
+                <li class="py-3 relative -left-[14px] "><img src="../icons-images/ellipsis-horizontal.png" alt=""></li>
+            </div>
+            <div class="flex justify-between items-center px-10 list-none gap-6">
+        
+                <li class="py-3  flex gap-2 relative -left-[20px]">
+                    <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+                    <h2>KH14012150</h2></li>
+                <li class="py-3 relative left-[6px] "><h2>Hull City Council</h2></li>
+                <li class="py-3 relative -left-[59px]"><h2>12 Mar, 2024 12:34pm</h2></li>
+                <li class="py-3 relative -left-[65px]"><h2>£50</h2></li>
+                
+                <li class="py-3 relative -left-[14px] "><img src="../icons-images/ellipsis-horizontal.png" alt=""></li>
+            </div>
+            <div class="flex justify-between items-center px-10 list-none gap-6">
+        
+                <li class="py-3  flex gap-2 relative -left-[20px]">
+                    <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+                    <h2>KH14012150</h2></li>
+                <li class="py-3 relative left-[6px] "><h2>Hull City Council</h2></li>
+                <li class="py-3 relative -left-[59px]"><h2>12 Mar, 2024 12:34pm</h2></li>
+                <li class="py-3 relative -left-[65px]"><h2>£50</h2></li>
+                
+                <li class="py-3 relative -left-[14px] "><img src="../icons-images/ellipsis-horizontal.png" alt=""></li>
+            </div>
+            <div class="flex justify-between items-center px-10 list-none gap-6">
+        
+                <li class="py-3  flex gap-2 relative -left-[20px]">
+                    <input class="checked:bg-rose-300 border border-orange-300" type="checkbox">
+                    <h2>KH14012150</h2></li>
+                <li class="py-3 relative left-[6px] "><h2>Hull City Council</h2></li>
+                <li class="py-3 relative -left-[59px]"><h2>12 Mar, 2024 12:34pm</h2></li>
+                <li class="py-3 relative -left-[65px]"><h2>£50</h2></li>
+                
+                <li class="py-3 relative -left-[14px] "><img src="../icons-images/ellipsis-horizontal.png" alt=""></li>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center justify-between shadow-md mt-8 px-4 md:px-[85px] md:mb-28">
+            <div class="text-sm text-gray-600">1 — 10 of 100 results</div>
+            <div class="flex items-center space-x-2">
+                <button class="px-4 py-2 text-sm text-gray-400  rounded">Prev</button>
+                <button class="px-4 py-2 text-sm text-gray-600  rounded">Next</button>
+            </div>
+        </div>
+        <!-- selected ticket-->
+        <div class="flex justify-center text-center mt-5 md:hidden ">
+           <div class="">
+                <h2 class="font-semibold">
+                    <span>0</span>
+                   tickets selected
+                </h2>
+                <p>KH6994904, KH7039474</p>
+                <div class="flex gap-3">
+                    <Button class="bg-white px-2 py-2 w-[154px] rounded-md border">Delete</Button>
+                    <button class="bg-orange-500 border rounded-md px-2 py-2">Make Payment £350</button>
+                </div>
+           </div>
+        </div>
+        <div class="hidden md:flex justify-between px-10 py-2 bg-white shadow-xl">
+            <div>
+                <h2 class="font-semibold">
+                    <span>0</span>
+                   tickets selected
+                </h2>
+                <p>KH6994904, KH7039474</p>
+            </div>
+            <div class="flex gap-3">
+                <Button class="bg-white px-2 py-2 w-[154px] rounded-md border">Delete</Button>
+                <button class="bg-orange-500 border rounded-md px-2 py-2">Make Payment £350</button>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/paidTickets.js"></script>
+</body>
+</html>

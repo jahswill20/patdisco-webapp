@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body class="bg-gray-100 md:flex">
+  
+  <aside class=" hidden w-60 bg-white shadow-md md:flex md:flex-col justify-between min-h-screen">
+    <div class=" pt-6">
+      <img src="../icons-images/mpf logo orange (1) 2.png" alt="logo" class="w-16 h-16 ml-6 mb-8">
+      <nav class="space-y-4  relative top-16">
+        <ul>
+          <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+            <img src="../icons-images/home-line.png" alt="Dashboard" class="w-6 h-6">
+            <a href="./pages/dashboard1.html">Dashboard</a>
+          </li> 
+          <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+            <img src="../icons-images/tag-01.png" alt="Tickets" class="w-6 h-6">
+            <a href="#">Tickets</a>
+          </li>
+          <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+            <img src="../icons-images/settings-02.png" alt="Settings" class="w-6 h-6">
+            <a href="#">Settings</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="p-4">
+      <img src="../icons-images/Group 875314.png" alt="Refer a friend" class="mx-auto relative bottom-10">
+    </div>
+    
+  </aside>
+    <div class="mx-auto">
+      <div class="">
+        <!-- header -->
+        <!-- desktop header -->
+<header class=" hidden md:flex relative top-2 w-[1100px] 2xl:w-[1189px] justify-between items-center mb-6 mt-5">
+  <div class="flex items-center gap-2 ml-5">
+    <label for="SearchInput"><img src="../icons-images/magnifying-glass.png" alt="Search" class="w-5 h-5"></label>
+    <input type="text" id="SearchInput" placeholder="Search For Tickets, PCN and so on" class="w-60 bg-inherit focus:outline-none text-gray-700">
+  </div>
+  <div class="flex items-center gap-24">
+    <button class="flex items-center gap-2 px-4 py-2 bg-orange-400  border border-black rounded-md hover:bg-orange-500">
+      <img src="../icons-images/document-text.png" alt="Create Ticket" class="w-5 h-5">
+      <a href="./CreateTicket.html">Create A New Ticket</a>
+    </button>
+    <div class="flex items-center gap-4 mr-6">
+      <div>
+          <img src="../icons-images/bell-alert-solid.png" alt="Notification" class="w-6 h-6 text-gray-700" id="notificationsicondesktop">
+        
+        
+          <div id="notifications-desktop" class=" hidden absolute w-[483px] h-[400px] bg-white shadow-lg right-[70px] top-[75px] space-y-2 rounded overflow-y-scroll">
+              <div class="flex justify-between border-b border-gray-400 px-3 py-3">
+                  <h2 class="font-bold">Notification</h2>
+                  <img src="../icons-images/x-mark-mini.png" alt="" class="" id="hideNotifications-desktop">
+              </div>
+              <div>
+                  <!--notification content -->
+                  <div class="flex justify-between py-2 px-3">
+                      <div class="flex gap-2">
+                          <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                          <div>
+                              <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                              <p class="text-[13px]">your ticket has been paid</p>
+                          </div>
+                      </div>
+
+                      <div>
+                          <h2 class="text-[13px]">> 1m ago</h2>
+                      </div>
+                  </div>
+
+                  <div class="flex justify-between py-2 px-3">
+                      <div class="flex gap-2">
+                          <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                          <div>
+                              <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                              <p class="text-[13px]">your ticket has been paid</p>
+                          </div>
+                      </div>
+
+                      <div>
+                          <h2 class="text-[13px]">> 1m ago</h2>
+                      </div>
+                  </div>
+
+                  <div class="flex justify-between py-2 px-3">
+                      <div class="flex gap-2">
+                          <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                          <div>
+                              <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                              <p class="text-[13px]">your ticket has been paid</p>
+                          </div>
+                      </div>
+
+                      <div>
+                          <h2 class="text-[13px]">> 1m ago</h2>
+                      </div>
+                  </div>
+
+                  <div class="flex flex-col py-2 px-3">
+                      <div  class="flex justify-between"> <div class="flex gap-2">
+                          <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                          <div>
+                              <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                          </div>
+                      </div>
+
+                      <div>
+                          <h2 class="text-[13px]">> 1m ago</h2>
+                      </div></div>
+
+                      <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+                  </div>
+                  <div class="flex flex-col py-2 px-3">
+                      <div  class="flex justify-between"> <div class="flex gap-2">
+                          <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                          <div>
+                              <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                          </div>
+                      </div>
+
+                      <div>
+                          <h2 class="text-[13px]">> 1m ago</h2>
+                      </div></div>
+
+                      <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+                  </div>
+                  <div class="flex flex-col py-2 px-3">
+                      <div  class="flex justify-between"> <div class="flex gap-2">
+                          <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                          <div>
+                              <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                          </div>
+                      </div>
+
+                      <div>
+                          <h2 class="text-[13px]">> 1m ago</h2>
+                      </div></div>
+
+                      <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+                  </div>
+
+
+
+              </div>
+          </div>
+      </div>
+      
+
+      <img src="../icons-images/Group 166.png" alt="User" class="w-10 h-10 rounded-full " id="Profile">
+      <div id="Logout" class="w-36 h-10 absolute bg-white
+       shadow-lg border border-gray-300
+        rounded-md top-[68px] right-[4px] py-2 px-3 hidden">
+        <h2>log out</h2>
+      </div>
+    </div>
+  </div>
+</header>
+        <div class="flex md:mt-32 md:ml-24  2xl:ml-16 md:gap-16">
+          <div class=" hidden md:flex md:flex-col w-[267px] mt-10 space-y-7 md:relative -top-10">
+
+            <div class="relative -top-10">
+              <h2 class="text-2xl font-semibold">Settings</h2>
+            </div>
+
+            <div class="relative -top-4">
+              <h2 class="font-semibold">Profile photo</h2>
+            </div>
+
+            <div>
+              <h2 class="font-semibold">Name</h2>
+            </div>
+
+            <div class="relative -bottom-3  gap-3">
+              <h2 class="font-semibold">Email</h2>
+              <p>
+                all communications and activity notification will be sent to your email address
+              </p>
+            </div>
+
+            <div>
+              <h2 class="font-semibold mt-5">Password</h2>
+              <p>make sure the password is Strong and secure </p>
+            </div>
+
+          </div>
+          <div class=" md:w-[324px]">
+            
+      <div class="flex justify-between px-3 py-4 md:hidden">
+        <img src="../icons-images/menu-01.png" alt="menu" 
+          class="w-[32px] h-[32px] "  id="menu"   >
+        <h2 class="text-2xl font-semibold mb-6">Settings</h2>
+        <img src="../icons-images/bell-alert-solid.png" alt="notificationsicon"
+        class="w-[20px] h-[20px] mt-2" id="notificationsicon">
+        <div id="notifications" class=" hidden absolute max-w-md h-[400px] bg-white shadow-lg top-0 space-y-2 rounded overflow-y-scroll">
+          <div class="flex justify-between border-b border-gray-400 px-3 py-3">
+              <h2 class="font-bold">Notification</h2>
+              <img src="../icons-images/x-mark-mini.png" alt="" class="" id="hideNotifications">
+          </div>
+          <div>
+              <!--notification content -->
+              <div class="flex justify-between py-2 px-3">
+                  <div class="flex gap-2">
+                      <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                      <div>
+                          <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                          <p class="text-[13px]">your ticket has been paid</p>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h2 class="text-[13px]">> 1m ago</h2>
+                  </div>
+              </div>
+
+              <div class="flex justify-between py-2 px-3">
+                  <div class="flex gap-2">
+                      <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                      <div>
+                          <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                          <p class="text-[13px]">your ticket has been paid</p>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h2 class="text-[13px]">> 1m ago</h2>
+                  </div>
+              </div>
+
+              <div class="flex justify-between py-2 px-3">
+                  <div class="flex gap-2">
+                      <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                      <div>
+                          <h2 class="text-[13px] font-bold">Ticket paid</h2>
+                          <p class="text-[13px]">your ticket has been paid</p>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h2 class="text-[13px]">> 1m ago</h2>
+                  </div>
+              </div>
+
+              <div class="flex flex-col py-2 px-3">
+                  <div  class="flex justify-between"> <div class="flex gap-2">
+                      <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                      <div>
+                          <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h2 class="text-[13px]">> 1m ago</h2>
+                  </div></div>
+
+                  <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+              </div>
+              <div class="flex flex-col py-2 px-3">
+                  <div  class="flex justify-between"> <div class="flex gap-2">
+                      <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                      <div>
+                          <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h2 class="text-[13px]">> 1m ago</h2>
+                  </div></div>
+
+                  <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+              </div>
+              <div class="flex flex-col py-2 px-3">
+                  <div  class="flex justify-between"> <div class="flex gap-2">
+                      <img src="../icons-images/Blackexclamation.png" alt="" class="h-[16px] w-[16px]">
+                      <div>
+                          <h2 class="text-[13px] font-bold">issue with ticket</h2>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h2 class="text-[13px]">> 1m ago</h2>
+                  </div></div>
+
+                  <div class="px-6"><p>Ticket with the PCN KH9802804 has been flagged, there is an issue with the ticket</p></div>
+              </div>
+
+
+
+          </div>
+      </div>
+
+      </div>
+
+
+
+      <nav id="nav" class="fixed inset-0 bg-white transform -translate-x-60 transition-transform duration-300 z-50 w-[245px]">
+        <div class="">
+            <div class="flex items-end justify-end mb-6 px-6 pt-6">
+                <img src="../icons-images/x-mark.png" alt="x" id="close">
+            </div>
+            <div class=" flex justify-between items-center mb-10 px-6">
+                <img src="../icons-images/mpf logo orange (1) 2.png" alt="">
+                <img src="../icons-images/Group 166.png" alt="">
+            </div>
+            <ul class="space-y-6">
+                <li class="flex items-center space-x-2 py-2 px-8 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                    <img src="../icons-images/home-line.png" alt="">
+                    <a href="#" class="text-lg font-semibold">Dashboard</a>
+                </li>
+                <li class="flex items-center space-x-2 py-2 px-8 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                    <img src="../icons-images/tag-01.png" alt="tickets" class="w-6 h-6 mr-2">
+                    <a href="#" class="text-lg font-semibold">Tickets</a>
+                </li>
+                <li class="flex items-center space-x-2 py-2 px-8 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                    <img src="../icons-images/settings-02.png" alt="settings" class="w-6 h-6 mr-2">
+                    <a href="#" class="text-lg font-semibold">Settings</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class=" relative -bottom-10 flex items-center justify-center mt-36">
+            <img src="../icons-images/Group 875314.png" alt="">
+        </div>
+        
+    </nav>
+
+        <div class="mb-6 px-3">
+            <label class="block text-sm font-semibold text-gray-700 mb-2 md:hidden" >Profile Photo</label>
+            <div class="flex items-center md:mt-4" >
+                <img class="inline-block h-[48px] w-[48px] rounded-full" src="../icons-images/Group 166.png" alt="Profile Photo">
+                <div class="ml-4">
+                    <input type="file" accept="image/png, image/jpeg" class="hidden" id="file-upload">
+                  </div>
+                  <p class="text-[13px] text-gray-500 mt-2">
+                  We accept files in PNG or JPG format, with a maximum size of 5 MB.
+                  <label for="file-upload"
+                  class="cursor-pointer text-orange-400 hover:text-orange-500 text-[13px]"
+                  >Change my photo</label></p>
+              </div>
+               
+        </div>
+        
+        <div class="flex px-3 gap-2 mb-4">
+          <!-- names -->
+          <div class="">
+            <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+            <input type="text" id="first-name" class="mt-1 border bg-gray-100 w-full rounded-md border-gray-300 shadow-sm px-2 h-8 sm:text-sm">
+        </div>
+
+        <div class="">
+            <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+            <input type="text" id="last-name" class="mt-1 border bg-gray-100 w-full rounded-md border-gray-300 shadow-sm px-2 h-8 sm:text-sm">
+        </div>
+        </div>
+
+        <div class="mb-6 px-3">
+            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+            <input type="email" id="email" class="mt-1 bg-gray-100 border h-8 w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+            <p class="text-sm text-gray-500 mt-2 md:hidden">All communications and activity notifications will be sent to your email address.</p>
+        </div>
+
+        <div class="mb-6 px-3 md:relative md:-bottom-10">
+            <label for="current-password" class="block text-sm  font-medium text-gray-700 ">Current Password</label>
+            <div class="mt-1 relative rounded-md shadow-sm">
+                <input type="password" id="current-password" class="border bg-gray-100 w-full pr-10 border-gray-300 rounded-md h-8 sm:text-sm" value="ParkingRockz18">
+                <div class="absolute inset-y-0 right-0 px-2 flex items-center  justify-center  border border-gray-300 ">
+                    <img src="../icons-images/eye-mini.png" alt="" class="mx-auto" id="toggle-visibility1">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-6 px-3 md:relative md:-bottom-10">
+          <label for="current-password" class="block text-sm font-medium text-gray-700">New passsword</label>
+          <div class="mt-1 relative rounded-md shadow-sm">
+              <input type="password" id="New-password" class="border bg-gray-100 w-full pr-10 border-gray-300 rounded-md h-8 sm:text-sm" placeholder="ParkingRockz18">
+              <div class="absolute inset-y-0 right-0 px-2 flex items-center  justify-center  border border-gray-300 ">
+                  <img src="../icons-images/eye-mini.png" alt="" class="mx-auto" id="toggle-visibility2">
+              </div>
+          </div>
+      </div>
+
+      <div class="mb-6 px-3 md:relative md:-bottom-10">
+        <label for="current-password" class="block text-sm font-medium text-gray-700">Confirm password</label>
+        <div class="mt-1 relative rounded-md shadow-sm">
+            <input type="password" id="Confirm-password" class="border w-full bg-gray-100 pr-10 border-gray-300 rounded-md h-8 sm:text-sm" placeholder="ParkingRockz18">
+            <div class="absolute inset-y-0 right-0 px-2 flex items-center  justify-center  border border-gray-300 ">
+                <img src="../icons-images/eye-mini.png" alt="" class="mx-auto" id="toggle-visibility3">
+            </div>
+        </div>
+    </div>
+
+        <div class=" mt-20 px-3 md:mb-10 md:flex">
+            <button class=" md:relative md:left-[175px] w-full bg-orange-500 text-[13px] py-2md md:w-[126px] md:h-[40px] px-4 rounded-md hover:bg-orange-600">Save Changes</button>
+        </div>
+          </div>
+        </div>
+         
+      </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const desktopnotification = document.getElementById('notificationsicondesktop');
+         const notificationDesktop = document.getElementById('notifications-desktop');
+            const HidenotificationDesktop = document.getElementById('hideNotifications-desktop');
+
+            desktopnotification.addEventListener('click',  () => {
+              notificationDesktop.classList.remove('hidden');
+    });
+    HidenotificationDesktop.addEventListener('click', () => {
+        notificationDesktop.classList.add('hidden');
+    });
+    
+    });
+    
+    </script>
+  <script src="../scripts/Settings.js"></script>
+</body>
+</html>

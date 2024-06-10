@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create A New Ticket</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center md:flex-row ">
+    
+    <aside class=" hidden w-60 bg-white shadow-md md:flex md:flex-col justify-between h-[1119px]">
+        <div class=" pt-6">
+          <img src="../icons-images/mpf logo orange (1) 2.png" alt="logo" class="w-16 h-16 ml-6 mb-8">
+          <nav class="space-y-4  relative top-16">
+            <ul>
+              <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                <img src="../icons-images/home-line.png" alt="Dashboard" class="w-6 h-6">
+                <a href="./pages/dashboard1.html">Dashboard</a>
+              </li> 
+              <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                <img src="../icons-images/tag-01.png" alt="Tickets" class="w-6 h-6">
+                <a href="#">Tickets</a>
+              </li>
+              <li class="flex items-center space-x-2 py-2 px-9 text-gray-700 hover:bg-[#002820] hover:text-white hover:rounded-l-full">
+                <img src="../icons-images/settings-02.png" alt="Settings" class="w-6 h-6">
+                <a href="#">Settings</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="p-4">
+          <img src="../icons-images/Group 875314.png" alt="Refer a friend" class="mx-auto relative bottom-10">
+        </div>
+        
+      </aside>
+
+
+
+    <header class="w-full flex items-center justify-between p-4 bg-gray-100 md:hidden">
+        <button class="text-gray-600"><img src="../icons-images/arrow-left.png" alt="Back"></button>
+        <h1 class="text-lg font-bold">Create A New Ticket</h1>
+        <button class="text-gray-600"><img src="../icons-images/bell-alert-solid.png" alt="Notifications"></button>
+    </header>
+ 
+    
+    <main class="w-full p-4 space-y-6 flex flex-col">
+        <header class=" hidden md:flex justify-between items-center mb-6 relative -top-8 mt-6">
+            <div class="flex items-center gap-2 ml-5">
+              <label for="SearchInput"><img src="../icons-images/magnifying-glass.png" alt="Search" class="w-5 h-5"></label>
+              <input type="text" id="SearchInput" placeholder="Search For Tickets, PCN and so on" class="w-60 bg-inherit focus:outline-none text-gray-700">
+            </div>
+            <div class="flex items-center gap-24">
+              <button class="flex items-center gap-2 px-4 py-2 bg-orange-400  border border-black rounded-md hover:bg-orange-500">
+                <img src="../icons-images/document-text.png" alt="Create Ticket" class="w-5 h-5">
+                Create A New Ticket
+              </button>
+              <div class="flex items-center gap-4 mr-6">
+                <img src="../icons-images/bell-alert-solid.png" alt="Notification" class="w-6 h-6 text-gray-700">
+                <img src="../icons-images/Group 166.png" alt="User" class="w-10 h-10 rounded-full">
+              </div>
+            </div>
+          </header>
+        
+            <div class="max-w-md mx-auto">
+                <h2 class="hidden md:flex text-center text-2xl ml-16 font-bold">Create a new Ticket</h2>
+                <p class="text-center text-gray-500 ">Upload an image of your ticket or enter manually</p>
+        
+                <div id="upload-container" class=" mt-10 border-dashed border-2 border-gray-400 rounded-lg p-6 flex flex-col items-center space-y-1 cursor-pointer">
+                    <div class="flex items-center space-x-2">
+                        <img id="upload-icon" src="../icons-images/Vector (2).png" alt="Upload Ticket" class="h-[15px] w-[15px] ">
+                        <span class="text-gray-600" id="text-span">Upload Ticket</span>
+                    </div>
+                    <div id="pictureInfo" class="text-center">
+                        <p id="upload-text" class="text-gray-400 text-[13px]">Drag and drop files here or click to upload</p>
+                        <p class="text-gray-400 text-[11px]" id="textContent">Your ticket will be scanned and populated</p>
+                    </div>
+                </div>
+                
+                <div id="uploaded-file-details" class="justify-between h-[58px] px-[12px] py-[8px] border border-gray-300 bg-gray-200 hidden">
+                    <div class="flex gap-2 items-center">
+                        <img id="uploaded-file-icon" src="../icons-images/image.png" alt="Uploaded Image" class="w-[40px] h-[50px]">
+                        <div class="overflow-hidden">
+                            <h2 id="uploaded-filename" class="text-[13px] truncate">Filename</h2>
+                            <p id="uploaded-filesize" class="text-gray-600 text-[12px]">File size</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                        <img id="download-icon" src="../icons-images/arrow-down-tray.png" alt="Download" class="h-[17px] w-[17px] cursor-pointer">
+                        <img id="remove-icon" src="../icons-images/x-mark-mini.png" alt="Remove" class="h-[17px] w-[17px] cursor-pointer">
+                    </div>
+                </div>
+                
+                <div class="flex justify-center items-center mt-4 bg-white px-3">
+                    <span class="border-b border-gray-300 flex-1"></span>
+                    <span class="px-4 text-gray-500">Or Enter Manually</span>
+                    <span class="border-b border-gray-300 flex-1"></span>
+                </div>
+                
+                <form class="space-y-4">
+                    <div>
+                        <label for="council" class="block text-sm font-medium text-gray-700">Council</label>
+                        <select id="council" class="mt-1 block w-full border bg-gray-100 rounded-md p-2">
+                            <!-- Options go here -->
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pcn-number" class="block text-sm font-medium text-gray-700">PCN Number</label>
+                        <input type="text" id="pcn-number" class="mt-1 block w-full border border-gray-300 bg-gray-100 rounded-md p-2">
+                    </div>
+                    <div>
+                        <label for="validation-date" class="block text-sm font-medium text-gray-700">Validation Date</label>
+                        <div class="relative mt-1">
+                            <img src="../icons-images/calendar-mini.png" alt="Calendar" class="absolute top-1/2 transform -translate-y-1/2 left-2 h-4 w-4">
+                            <input type="text" id="validation-date" class="block w-full border border-gray-300 rounded-md py-2 pl-8 bg-gray-100" placeholder="DD/MM/YYYY">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="location" class="block text-sm font-medium text-gray-700">Location</label>
+                        <input type="text" id="location" class="mt-1 block w-full border border-gray-300 rounded-md p-2 bg-gray-100">
+                    </div>
+                    <div>
+                        <label for="penalty-charge" class="block text-sm font-medium text-gray-700">Penalty Charge</label>
+                        <input type="text" id="penalty-charge" class="mt-1 block w-full border border-gray-300 rounded-md p-2 bg-gray-100" readonly>
+                    </div>
+                    <div>
+                        <label for="vehicle-registration" class="block text-sm font-medium text-gray-700">Vehicle Registration</label>
+                        <input type="text" id="vehicle-registration" class="mt-1 block w-full border border-gray-300 bg-gray-100 rounded-md p-2">
+                    </div>
+                    <div>
+                        <label for="vehicle-make" class="block text-sm font-medium text-gray-700">Vehicle Make</label>
+                        <input type="text" id="vehicle-make" class="mt-1 block w-full border border-gray-300 bg-gray-100 rounded-md p-2">
+                    </div>
+                    <div>
+                        <label for="vehicle-color" class="block text-sm font-medium text-gray-700">Vehicle Color</label>
+                        <input type="text" id="vehicle-color" class="mt-1 block w-full border border-gray-300 bg-gray-100 rounded-md p-2">
+                    </div>
+                    <div class="text-orange-600 text-sm cursor-pointer">+ Add another ticket</div>
+                    <div class="flex space-x-4">
+                        <button type="button" class="flex-1 bg-gray-200 text-gray-700 p-3 rounded-md">Save To Pay Later</button>
+                        <button type="button" class="flex-1 bg-orange-500 text-white p-3 rounded-md">Make Payment</button>
+                    </div>
+                </form>
+
+            </div>
+
+
+        
+    </main>
+
+    <!-- Hidden File Input -->
+    <input type="file" id="file-input" class="hidden">
+
+    <script src="../scripts/createTicket.js"></script>
+</body>
+</html>
+
